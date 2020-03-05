@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "company_rating": {
+      "customRender": "rating",
+      "type": "number"
+    },
+    "employee": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "employee_name": {
+            "type": "string"
+          },
+          "employee_rating": {
+            "customRender": "rating",
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": ["company_name"]
+}
